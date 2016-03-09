@@ -76,3 +76,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.side-bar {
+  height: 100%;
+  background-color: #E20074;
+}
