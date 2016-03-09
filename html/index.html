@@ -40,50 +40,73 @@
 </head>
 <body>
 
-<div class="container">
-  <div class="header clearfix">
-    <nav>
-      <ul class="nav nav-pills nav-justified">
-        <li role="presentation">
-          <a class="navbar-brand" href="https://www.telekom.de" target="_blank">
-            <img alt="Deutsche Telekom AG logo" src="img/telekom_small.png">
-          </a>
-        </li>
-        <li role="presentation">
-          <a class="navbar-brand" href="https://www.codecentric.de" target="_blank">
-            <img alt="codecentric AG logo" src="img/codecentric_small.png">
-          </a>
-        </li>
-        <li role="presentation">
-          <a class="navbar-brand" href="https://www.scanplus.de" target="_blank">
-            <img alt="ScanPlus GmbH logo" src="img/scanplus_small.png" style="margin-top: -6px">
-          </a>
-        </li>
-      </ul>
-    </nav>
+<div class="container-fluid">
+
+  <div class=row>
+    <div class="col-md-3 visible-md-block visible-lg-block side-bar">
+      <h2 class="text-center">"In 2 Wochen läufts"</h2>
+    </div>
+    <div class="col-md-6 main-content">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills nav-justified">
+            <li role="presentation">
+              <a class="navbar-brand" href="https://www.telekom.de" target="_blank">
+                <img alt="Deutsche Telekom AG logo" src="img/telekom_small.png">
+              </a>
+            </li>
+            <li role="presentation">
+              <a class="navbar-brand" href="https://www.codecentric.de" target="_blank">
+                <img alt="codecentric AG logo" src="img/codecentric_small.png">
+              </a>
+            </li>
+            <li role="presentation">
+              <a class="navbar-brand" href="https://www.scanplus.de" target="_blank">
+                <img alt="ScanPlus GmbH logo" src="img/scanplus_small.png" style="margin-top: -6px">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Dynamic AppFactory Tweets</h2>
+        <p class="lead">
+          This is a show case application for the <em>Dynamic AppFactory</em>.
+        </p>
+        <p>
+          If you want to learn more, come visit us at CeBIT 2016 in Hannover: <a href="http://www.cebit.de/exhibitor/deutsche-telekom/S982448">Hall 4, Stand C38</a>.
+        </p>
+      </div>
+
+      <p class="text-center">
+        <a class="twitter-timeline"
+          href="https://twitter.com/search?q=%23CeBIT2016%20OR%20%23Telekom%20OR%20%23AppFactory"
+          data-widget-id="707159747628236802">
+          Tweets über #CeBIT2016 OR #Telekom OR #AppFactory
+        </a>
+      </p>
+
+      <footer class="footer">
+        <p>&copy; 2016 codecentric AG</p>
+      </footer>
+    </div>
+    <div class="col-md-3 visible-md-block visible-lg-block side-bar">
+      <p>
+        User Enterprise-Level Angebot für Sie zum Start in die digitale Transformation:
+      </p>
+      <p>
+        Proof of Concept (PoC) Projekt in zwei Wochen zum Pauschalpreis von 25.000 &euro;.<br/>
+        Ziel: Ihre Digitalisierungsidee identifizieren und auf der Telekom PaaS als "Minimum viable Product"* umsetzen.
+      </p>
+      <p>
+        Wenn Sie nach dem PoC auf der Managed Dynamic App Factory produzieren, erhalten Sie ein Guthaben für die PaaS-Leistungen i.h.v. 5.000 &euro; für die PoC-Phase.
+      </p>
+      <p>
+        <small class="footnote">* IN EINEM "minimum viable product" STECKT SO VIEL FUNKTIONSUMFANG, DASS ES PRAKTISCH GENUTZT WERDEN KANN UND ERKENNTNISSE ZUR WEITEREN ENTWICKLUNG GEWONNEN WERDEN KÖNNEN.</small>
+      </p>
+    </div>
   </div>
-
-  <div class="jumbotron">
-    <h2>Dynamic AppFactory Tweets</h2>
-    <p class="lead">
-      This is a show case application for the <em>Dynamic AppFactory</em>.
-    </p>
-    <p>
-      If you want to learn more, come visit us at CeBIT 2016 in Hannover: <a href="http://www.cebit.de/exhibitor/deutsche-telekom/S982448">Hall 4, Stand C38</a>.
-    </p>
-  </div>
-
-  <p class="text-center">
-    <a class="twitter-timeline"
-      href="https://twitter.com/search?q=%23CeBIT2016%20OR%20%23Telekom%20OR%20%23AppFactory"
-      data-widget-id="707159747628236802">
-      Tweets über #CeBIT2016 OR #Telekom OR #AppFactory
-    </a>
-  </p>
-
-  <footer class="footer">
-    <p>&copy; 2016 codecentric AG</p>
-  </footer>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -91,6 +114,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- Twitter Timeline -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>window.twttr = (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https',t=window.twttr||{};if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f)};return t;}}(document,"script","twitter-wjs"));</script>
+<script>
+twttr.ready(function(twttr) {
+  $('.side-bar').height('100%')
+});
+</script>
 </body>
 </html>

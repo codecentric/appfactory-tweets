@@ -1,5 +1,5 @@
 /* Space out content a bit */
-body {
+.main-content {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -31,12 +31,11 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -76,4 +75,15 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.side-bar {
+  height: 100%;
+  background-color: #E20074;
+  color: white;
+  padding-top: 100px;
+}
+
+.footnote {
+  font-size: 75%;
 }
