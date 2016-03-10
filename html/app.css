@@ -84,6 +84,14 @@
   padding-top: 100px;
 }
 
+.side-bar h2 {
+  margin-top: 0;
+}
+
+.sidebar-block {
+  padding-left: 15px;
+}
+
 .footnote {
   font-size: 75%;
 }
