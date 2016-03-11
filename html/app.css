@@ -95,3 +95,7 @@
 .footnote {
   font-size: 75%;
 }
+
+.footnote-container {
+  padding-top: 25px;
+}
