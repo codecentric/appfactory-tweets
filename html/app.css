@@ -99,3 +99,12 @@
 .footnote-container {
   padding-top: 25px;
 }
+
+.navbar-brand.center {
+  width: 100%
+}
+
+.navbar-brand.center img {
+  display: block;
+  margin: auto
+}
